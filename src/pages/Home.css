@@ -1,0 +1,13 @@
+.ant-card {
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.ant-card:hover {
+  transform: scale(1.05);
+}
+
+.ant-typography h1,
+.ant-typography h2 {
+  font-family: "Poppins", sans-serif;
+}
