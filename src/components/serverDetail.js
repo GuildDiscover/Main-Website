@@ -16,8 +16,14 @@ function ServerDetails({ servers }) {
   return (
     <div style={{ padding: "20px" }}>
       <Card
-        cover={<img alt={`${server.name} banner`} src={server.banner_image} />}
         style={{ marginBottom: "20px" }}
+        cover={
+          <img
+            alt={`${server.name} banner`}
+            src={server.banner_image}
+            style={{ maxHeight: "300px", objectFit: "cover" }}
+          />
+        }
       >
         <Meta
           avatar={<Avatar src={server.logo} />}
