@@ -11,7 +11,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/gaming-hub.jpg",
+    "banner_image": "https://picsum.photos/200",
     "logo": "https://example.com/images/gaming-logo.jpg",
     "status": "active"
   },
@@ -27,7 +27,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/tech-enthusiasts.jpg",
+    "banner_image": "https://picsum.photos/300",
     "logo": "https://example.com/images/tech-logo.jpg",
     "status": "active"
   },
@@ -43,7 +43,7 @@
     "boost_level": 3,
     "language": "Japanese",
     "country": "JP",
-    "banner_image": "https://example.com/images/anime-lovers.jpg",
+    "banner_image": "https://picsum.photos/250",
     "logo": "https://example.com/images/anime-logo.jpg",
     "status": "active"
   },
@@ -59,7 +59,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "UK",
-    "banner_image": "https://example.com/images/book-club.jpg",
+    "banner_image": "https://picsum.photos/283",
     "logo": "https://example.com/images/book-logo.jpg",
     "status": "active"
   },
@@ -75,7 +75,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/fitness-freaks.jpg",
+    "banner_image": "https://picsum.photos/240",
     "logo": "https://example.com/images/fitness-logo.jpg",
     "status": "active"
   },
@@ -91,7 +91,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "CA",
-    "banner_image": "https://example.com/images/photography.jpg",
+    "banner_image": "https://picsum.photos/210",
     "logo": "https://example.com/images/photography-logo.jpg",
     "status": "active"
   },
@@ -107,7 +107,7 @@
     "boost_level": 3,
     "language": "English",
     "country": "IN",
-    "banner_image": "https://example.com/images/code-masters.jpg",
+    "banner_image": "https://picsum.photos/370",
     "logo": "https://example.com/images/code-logo.jpg",
     "status": "active"
   },
@@ -123,7 +123,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/cooking-corner.jpg",
+    "banner_image": "https://picsum.photos/270",
     "logo": "https://example.com/images/cooking-logo.jpg",
     "status": "active"
   },
@@ -139,7 +139,7 @@
     "boost_level": 4,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/crypto-traders.jpg",
+    "banner_image": "https://picsum.photos/310",
     "logo": "https://example.com/images/crypto-logo.jpg",
     "status": "active"
   },
@@ -155,7 +155,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "DE",
-    "banner_image": "https://example.com/images/music-lovers.jpg",
+    "banner_image": "https://picsum.photos/340",
     "logo": "https://example.com/images/music-logo.jpg",
     "status": "active"
   },
@@ -171,7 +171,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "FR",
-    "banner_image": "https://example.com/images/pet-lovers.jpg",
+    "banner_image": "https://picsum.photos/271",
     "logo": "https://example.com/images/pet-logo.jpg",
     "status": "active"
   },
@@ -187,7 +187,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "IT",
-    "banner_image": "https://example.com/images/fashion-forward.jpg",
+    "banner_image": "https://picsum.photos/272",
     "logo": "https://example.com/images/fashion-logo.jpg",
     "status": "active"
   },
@@ -203,7 +203,7 @@
     "boost_level": 3,
     "language": "Spanish",
     "country": "ES",
-    "banner_image": "https://example.com/images/travel-buddies.jpg",
+    "banner_image": "https://picsum.photos/273",
     "logo": "https://example.com/images/travel-logo.jpg",
     "status": "active"
   },
@@ -219,7 +219,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "UK",
-    "banner_image": "https://example.com/images/history-buffs.jpg",
+    "banner_image": "https://picsum.photos/274",
     "logo": "https://example.com/images/history-logo.jpg",
     "status": "active"
   },
@@ -235,7 +235,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "AU",
-    "banner_image": "https://example.com/images/science-society.jpg",
+    "banner_image": "https://picsum.photos/277",
     "logo": "https://example.com/images/science-logo.jpg",
     "status": "active"
   },
@@ -251,7 +251,7 @@
     "boost_level": 3,
     "language": "French",
     "country": "FR",
-    "banner_image": "https://example.com/images/art-connect.jpg",
+    "banner_image": "https://picsum.photos/279",
     "logo": "https://example.com/images/art-logo.jpg",
     "status": "active"
   },
@@ -267,7 +267,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "IN",
-    "banner_image": "https://example.com/images/start-up-hive.jpg",
+    "banner_image": "https://picsum.photos/259",
     "logo": "https://example.com/images/start-up-logo.jpg",
     "status": "active"
   },
@@ -283,7 +283,7 @@
     "boost_level": 3,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/language-exchange.jpg",
+    "banner_image": "https://picsum.photos/258",
     "logo": "https://example.com/images/language-logo.jpg",
     "status": "active"
   },
@@ -299,7 +299,7 @@
     "boost_level": 2,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/meme-universe.jpg",
+    "banner_image": "https://picsum.photos/257",
     "logo": "https://example.com/images/meme-logo.jpg",
     "status": "active"
   },
@@ -315,7 +315,7 @@
     "boost_level": 1,
     "language": "English",
     "country": "US",
-    "banner_image": "https://example.com/images/diy-makers.jpg",
+    "banner_image": "https://picsum.photos/247",
     "logo": "https://example.com/images/diy-logo.jpg",
     "status": "active"
   }
