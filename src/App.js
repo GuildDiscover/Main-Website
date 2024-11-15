@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Guidelines from "./pages/Guidelines";
 import Navbar from "./components/Navbar";
 
 function App() {
