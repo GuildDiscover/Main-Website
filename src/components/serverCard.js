@@ -32,11 +32,8 @@ const ServerCard = ({ server }) => {
         overflow: "hidden",
         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
         background: "linear-gradient(135deg, #ffffff, #f9f9f9)",
+        textAlign: "center", // Center align content for better aesthetics
       }}
-      title={<div style={{ fontSize: "1.2em", fontWeight: "600" }}>{server.name}</div>}
-      cover={
-        <img alt={server.name} src={server.banner_image} style={{ height: "180px", objectFit: "cover" }} />
-      }
       actions={[
         <Link to={`/server/${server.id}`} key="view-details">
           <Button
@@ -49,8 +46,35 @@ const ServerCard = ({ server }) => {
         </Link>,
       ]}
     >
+      {/* Round Server Image */}
+      <div
+        style={{
+          width: "100px",
+          height: "100px",
+          margin: "0 auto",
+          borderRadius: "50%",
+          overflow: "hidden",
+          border: "3px solid #1890ff",
+        }}
+      >
+        <img
+          alt={server.name}
+          src={server.banner_image}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
+      {/* Server Name */}
+      <div style={{ marginTop: "15px", fontSize: "1.2em", fontWeight: "600", color: "#333" }}>
+        {server.name}
+      </div>
+
       {/* Description */}
-      <Paragraph ellipsis={{ rows: 2 }} style={{ color: "#595959", marginBottom: "15px" }}>
+      <Paragraph ellipsis={{ rows: 2 }} style={{ color: "#595959", marginBottom: "15px", marginTop: "10px" }}>
         {server.description}
       </Paragraph>
 
@@ -72,6 +96,7 @@ const ServerCard = ({ server }) => {
         style={{
           marginTop: "10px",
           display: "flex",
+          justifyContent: "center",
           alignItems: "center",
           fontSize: "0.95em",
           color: "#595959",
