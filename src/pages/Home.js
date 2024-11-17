@@ -58,6 +58,58 @@ const Home = () => {
     },
   ];
 
+  const Home = () => {
+  const newServers = [
+    {
+      id: 1,
+      name: "Gaming Hub",
+      description: "A community for gamers to connect and play together.",
+      owner_id: 101,
+      invite_link: "https://discord.gg/gaminghub",
+      member_count: 1500,
+      categories: ["Gaming", "Social"],
+      created_at: "2024-10-19T10:00:00Z",
+      boost_level: 2,
+      language: "English",
+      country: "US",
+      banner_image: "https://picsum.photos/200",
+      logo: "https://example.com/images/gaming-logo.jpg",
+      status: "active",
+    },
+    {
+      id: 2,
+      name: "Tech Enthusiasts",
+      description: "Join us to discuss the latest in tech and gadgets.",
+      owner_id: 102,
+      invite_link: "https://discord.gg/techenthusiasts",
+      member_count: 1200,
+      categories: ["Tech", "Networking"],
+      created_at: "2024-09-20T15:30:00Z",
+      boost_level: 1,
+      language: "English",
+      country: "US",
+      banner_image: "https://picsum.photos/300",
+      logo: "https://example.com/images/tech-logo.jpg",
+      status: "active",
+    },
+    {
+      id: 3,
+      name: "Anime Lovers",
+      description: "Discuss your favorite anime, manga, and characters here!",
+      owner_id: 103,
+      invite_link: "https://discord.gg/animelovers",
+      member_count: 900,
+      categories: ["Anime", "Manga", "Entertainment"],
+      created_at: "2024-08-15T12:00:00Z",
+      boost_level: 3,
+      language: "Japanese",
+      country: "JP",
+      banner_image: "https://picsum.photos/250",
+      logo: "https://example.com/images/anime-logo.jpg",
+      status: "active",
+    },
+  ];
+
   return (
     <Content style={{ padding: "50px", backgroundColor: "#f0f2f5" }}>
       {/* Hero Section */}
@@ -96,9 +148,7 @@ const Home = () => {
               cover={<AppstoreOutlined style={{ fontSize: "50px", color: "#1890ff", padding: "20px" }} />}
             >
               <Paragraph>
-                There are many types of communities inside Guildiscover, from gaming to anime, and from
-                writing to arts. Discover and browse through a diverse range of communities inside this
-                directory to find the perfect match for you.
+                There are many types of communities inside Guildiscover, from gaming to anime, and from writing to arts. Discover and browse through a diverse range of communities inside this directory to find the perfect match for you.
               </Paragraph>
             </Card>
           </Col>
@@ -109,9 +159,7 @@ const Home = () => {
               cover={<TeamOutlined style={{ fontSize: "50px", color: "#1890ff", padding: "20px" }} />}
             >
               <Paragraph>
-                All communities on the directory has been intensively scanned thoroughly by our moderation
-                team. We try our best to ensure all communities here is safe for everyone to join and enjoy.
-                All users could join servers{" "}
+                All communities on the directory has been intensively scanned thoroughly by our moderation team. We try our best to ensure all communities here is safe for everyone to join and enjoy. All users could join servers while having their safety ensured. 
               </Paragraph>
             </Card>
           </Col>
@@ -121,7 +169,9 @@ const Home = () => {
               bordered={false}
               cover={<GlobalOutlined style={{ fontSize: "50px", color: "#1890ff", padding: "20px" }} />}
             >
-              <Paragraph>We prioritize your security and provide a trusted platform for all users.</Paragraph>
+              <Paragraph>
+                We prioritize your security and provide a trusted platform for all users. We made this platform, with security in mind, employing strict security policy through many web security methods, to ensure your experience with the platform is as secure as possible. 
+              </Paragraph>
             </Card>
           </Col>
         </Row>
@@ -154,6 +204,19 @@ const Home = () => {
             Discover New Communities
           </Title>
         </Divider>
+        <Row gutter={[16, 16]} style={{ marginTop: "30px", justifyContent: "space-around" }}>
+          {newServers.length > 0 ? (
+            <React.Fragment>
+              {topServers.map((server) => (
+                <Col xs={24} sm={12} md={8} lg={6} key={server.id}>
+                  <ServerCard server={server} />
+                </Col>
+              ))}
+            </React.Fragment>
+          ) : (
+            <div style={{ textAlign: "center", width: "100vw", fontSize: "16px" }}>No Servers Found</div>
+          )}
+        </Row>
       </div>
 
       <div style={{ marginBottom: "50px" }}>
