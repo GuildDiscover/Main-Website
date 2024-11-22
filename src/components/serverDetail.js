@@ -15,16 +15,7 @@ function ServerDetails({ servers }) {
 
   return (
     <div style={{ padding: "20px" }}>
-      <Card
-        style={{ marginBottom: "20px" }}
-        cover={
-          <img
-            alt={`${server.name} banner`}
-            src={server.banner_image}
-            style={{ maxHeight: "300px", objectFit: "cover" }}
-          />
-        }
-      >
+      <Card>
         <Meta
           avatar={<Avatar src={server.logo} />}
           title={<Title level={2}>{server.name}</Title>}
@@ -34,48 +25,42 @@ function ServerDetails({ servers }) {
 
       <Row gutter={16}>
         <Col span={12}>
-          <Card title="Server Information" bordered={false}>
+          <Card title="Server Description" bordered={false}>
+            <Text>{server.long_description}</Text>
+          </Card>
+        </Col>
+
+        <Col span={12}>
+        <Card title="Server Information" bordered={false}>
             <Text strong>Owner ID:</Text> <Text>{server.owner_id}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Member Count:</Text> <Text>{server.member_count}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Categories:</Text> <Text>{server.categories.join(", ")}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Created At:</Text> <Text>{new Date(server.created_at).toLocaleDateString()}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Boost Level:</Text> <Text>{server.boost_level}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Language:</Text> <Text>{server.language}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Country:</Text> <Text>{server.country}</Text>
-            <Divider />
+            <br></br>
             <Text strong>Status:</Text> <Text>{server.status}</Text>
             <Divider />
             <Button type="primary" href={server.invite_link} target="_blank">
               Join Server
             </Button>
           </Card>
-        </Col>
-
-        <Col span={12}>
-          <Card title="Moderator Reviews" bordered={false}>
-            {server.moderator_reviews && server.moderator_reviews.length > 0 ? (
-              server.moderator_reviews.map((review, index) => (
-                <div key={index} style={{ marginBottom: "10px" }}>
-                  <Text strong>Moderator ID:</Text> <Text>{review.moderator_id}</Text>
-                  <Divider />
-                  <Text strong>Review:</Text> <Text>{review.review}</Text>
-                  <Divider />
-                  <Text strong>Rating:</Text> <Rate disabled value={review.rating} />
-                  <Divider />
-                  <Text strong>Reviewed At:</Text>{" "}
-                  <Text>{new Date(review.reviewed_at).toLocaleDateString()}</Text>
-                  <Divider />
-                </div>
-              ))
-            ) : (
-              <Text>No reviews available.</Text>
-            )}
+          
+          <Card title="Moderator Review" bordered={false} style={{ marginTop: "10px" }}>
+                  <Rate disabled value={server.rating} />
+                  <br></br>
+                  <br></br>
+                  <Text>{server.moderator_review}</Text>
+                  <br></br>
+                  <br></br>
+                  <Text strong>Reviewed At:</Text> <Text>{server.moderator_date}</Text>
           </Card>
         </Col>
       </Row>
@@ -84,3 +69,4 @@ function ServerDetails({ servers }) {
 }
 
 export default ServerDetails;
+
