@@ -58,7 +58,6 @@ const Home = () => {
     },
   ];
 
-  const Home = () => {
   const newServers = [
     {
       id: 1,
