@@ -6,15 +6,25 @@ const { Title, Paragraph } = Typography;
 
 const Privacy = () => {
   return (
-    <Content style={{ padding: "50px", backgroundColor: "#f0f2f5" }}>
-      <Title level={1} style={{ textAlign: "center" }}>
+    <Content style={{ padding: "50px", background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          padding: "40px",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          borderRadius: "15px",
+          marginBottom: "50px",
+        }}
+      >
+        <Title level={1} style={{ textAlign: "center", color: "#fff" }}>
         Privacy Policy
       </Title>
-      <Paragraph style={{ textAlign: "center", color: "#555", fontSize: "16px" }}>
+      <Paragraph style={{ textAlign: "center", color: "#fff", fontSize: "16px" }}>
       <strong>Effective Date: 10 October 2024</strong>
 	    <br></br>
         At <strong>Guildiscover</strong> (accessible via https://guildiscover.jst-tan.page), we are deeply committed to protecting your privacy and ensuring your experience on our website is safe, enjoyable, and anonymous. This Privacy Policy explains how we collect, use, and protect any information gathered while using our services. If you do not agree with this Privacy Policy, please do not use our service. By accessing or using Guildiscover, you consent to the terms of this policy.
-      </Paragraph>
+      </Paragraph>  
+      </div>
       <br></br>
       <Title level={3} style={{ textAlign: "left" }}>
         Information We Collect
