@@ -57,8 +57,7 @@ const Home = () => {
       status: "active",
     },
   ];
-
-  const Home = () => {
+  
   const newServers = [
     {
       id: 1,
@@ -111,7 +110,7 @@ const Home = () => {
   ];
 
   return (
-    <Content style={{ padding: "50px", backgroundColor: "#f0f2f5" }}>
+    <Content style={{ padding: "50px", background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
       {/* Hero Section */}
       <div style={{ textAlign: "center", marginBottom: "50px" }}>
         <Title level={1} style={{ fontWeight: "bold" }}>
