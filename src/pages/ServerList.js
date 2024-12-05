@@ -36,12 +36,22 @@ const Servers = () => {
   }, [searchTerm]);
 
   return (
-    <Content style={{ padding: "50px", backgroundColor: "#f0f2f5" }}>
-      <Title level={2} style={{ textAlign: "center" }}>
+    <Content style={{ padding: "50px", background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          padding: "40px",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          borderRadius: "15px",
+          marginBottom: "50px",
+          color: "#fff"
+        }}
+      >
+      <Title level={1} style={{ textAlign: "center", color: "#fff" }}>
         Explore Servers
       </Title>
-      <Paragraph style={{ textAlign: "center", color: "#555", fontSize: "20px" }}>
-        Discover a wide range of communities to join and connect with like-minded people.
+      <Paragraph style={{ textAlign: "center", color: "#fff", fontSize: "20px" }}>
+        Discover many amazing and wide range of amazing communities on the Discord platform. A place to find the best suited community to you, on our wide range of communities to join and connect with like-minded people.
       </Paragraph>
 
       {/* Search bar */}
@@ -53,6 +63,7 @@ const Servers = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{ width: "100%" }}
         />
+      </div>
       </div>
 
       <Row gutter={[16, 16]} style={{ marginTop: "30px" }}>
