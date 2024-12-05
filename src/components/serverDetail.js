@@ -14,59 +14,67 @@ function ServerDetails({ servers }) {
   }
 
   return (
+    <div
+    style={{
+      textAlign: "center",
+      background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57",
+    }}
+  >
     <div style={{ padding: "20px" }}>
-      <Card>
+      <Card style={{ marginBottom: "20px" , background: "linear-gradient(135deg, #6a11cb, #2575fc)", color: "#fff" }}>
         <Meta
           avatar={<Avatar src={server.logo} />}
-          title={<Title level={2}>{server.name}</Title>}
-          description={<Text>{server.description}</Text>}
+          title={<Title level={2} style={{ color: "#fff" }}>{server.name}</Title>}
+          description={<Text style={{ color: "#fff" }}>{server.description}</Text>}
         />
       </Card>
 
       <Row gutter={16}>
         <Col span={12}>
-          <Card title="Server Description" bordered={false}>
-            <Text>{server.long_description}</Text>
+          <Card title="Server Description" bordered={false} style={{ marginBottom: "20px" , background: "#2d2e36", color: "#fff" }}>
+            <Text style={{ color: "#fff" }}>{server.long_description}</Text>
           </Card>
         </Col>
 
         <Col span={12}>
-        <Card title="Server Information" bordered={false}>
-            <Text strong>Owner ID:</Text> <Text>{server.owner_id}</Text>
+        <Card title="Server Information" bordered={false} style={{ marginBottom: "20px" , background: "#2d2e36", color: "#fff" }}>
+          <div style={{ textAlign: "left" }}>
+            <Text strong style={{ color: "#fff" }}>Owner ID:</Text> <Text style={{ color: "#fff" }}>{server.owner_id}</Text>
             <br></br>
-            <Text strong>Member Count:</Text> <Text>{server.member_count}</Text>
+            <Text strong style={{ color: "#fff" }}>Member Count:</Text> <Text style={{ color: "#fff" }}>{server.member_count}</Text>
             <br></br>
-            <Text strong>Categories:</Text> <Text>{server.categories.join(", ")}</Text>
+            <Text strong style={{ color: "#fff" }}>Categories:</Text> <Text style={{ color: "#fff" }}>{server.categories.join(", ")}</Text>
             <br></br>
-            <Text strong>Created At:</Text> <Text>{new Date(server.created_at).toLocaleDateString()}</Text>
+            <Text strong style={{ color: "#fff" }}>Created At:</Text> <Text style={{ color: "#fff" }}>{new Date(server.created_at).toLocaleDateString()}</Text>
             <br></br>
-            <Text strong>Boost Level:</Text> <Text>{server.boost_level}</Text>
+            <Text strong style={{ color: "#fff" }}>Boost Level:</Text> <Text style={{ color: "#fff" }}>{server.boost_level}</Text>
             <br></br>
-            <Text strong>Language:</Text> <Text>{server.language}</Text>
+            <Text strong style={{ color: "#fff" }}>Language:</Text> <Text style={{ color: "#fff" }}>{server.language}</Text>
             <br></br>
-            <Text strong>Country:</Text> <Text>{server.country}</Text>
+            <Text strong style={{ color: "#fff" }}>Country:</Text> <Text style={{ color: "#fff" }}>{server.country}</Text>
             <br></br>
-            <Text strong>Status:</Text> <Text>{server.status}</Text>
-            <Divider />
+            <Text strong style={{ color: "#fff" }}>Status:</Text> <Text style={{ color: "#fff" }}>{server.status}</Text>
+          </div>
+            <Divider style={{ borderColor: "yellow" }} />
             <Button type="primary" href={server.invite_link} target="_blank">
               Join Server
             </Button>
           </Card>
           
-          <Card title="Moderator Review" bordered={false} style={{ marginTop: "10px" }}>
-                  <Rate disabled value={server.rating} />
+          <Card title="Moderator Review" bordered={false} style={{ marginTop: "10px", background: "#2d2e36" }}>
+                  <Rate disabled value={server.rating} style={{ color: "yellow" }} />
                   <br></br>
                   <br></br>
-                  <Text>{server.moderator_review}</Text>
+                  <Text style={{ color: "#fff" }}>{server.moderator_review}</Text>
                   <br></br>
                   <br></br>
-                  <Text strong>Reviewed At:</Text> <Text>{server.moderator_date}</Text>
+                  <Text strong style={{ color: "#fff" }}>Reviewed At:</Text> <Text style={{ color: "#fff" }}>{server.moderator_date}</Text>
           </Card>
         </Col>
       </Row>
     </div>
+    </div>  
   );
 }
 
 export default ServerDetails;
-
