@@ -51,7 +51,7 @@ const Terms = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
             <Card
-              title={<span style={{ color: "#fff"}}>Server Description</span>}
+              title={<span style={{ color: "#fff"}}>Service Description</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
