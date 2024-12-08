@@ -30,7 +30,7 @@ const Guidelines = () => {
       <Row gutter={[16, 16]}>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="Be Respectful" 
+              title={<span style={{ color: "#fff"}}>Be Respectful</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -50,7 +50,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
             <Card
-              title="No Dangerous or Illegal Sales"
+              title={<span style={{ color: "#fff"}}>No Dangerous or Illegal Sales</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -70,7 +70,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="No Extremism, Child Abuse or Misinformation" 
+              title={<span style={{ color: "#fff"}}>No Extremism, Child Abuse or Misinformation</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -90,7 +90,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
             <Card
-              title="Don't Spam"
+              title={<span style={{ color: "#fff"}}>Don't Spam</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -110,7 +110,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="Respect Privacy & Security" 
+              title={<span style={{ color: "#fff"}}>Respect Privacy & Security</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -130,7 +130,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
             <Card
-              title="No Fraud / Scams"
+              title={<span style={{ color: "#fff"}}>No Fraud / Scam</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -150,7 +150,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="No NSFW or Offensive Content" 
+              title={<span style={{ color: "#fff"}}>No NSFW or Offensive Content</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -171,7 +171,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
             <Card
-              title="Follow the Law"
+              title={<span style={{ color: "#fff"}}>Follow the Law</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -191,7 +191,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="No Forced Reviews" 
+              title={<span style={{ color: "#fff"}}>No Forced Reviews</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -210,7 +210,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="No Dangerous Organizations" 
+              title={<span style={{ color: "#fff"}}>No Dangerous Organizations</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -229,7 +229,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="Report Violations" 
+              title={<span style={{ color: "#fff"}}>Report Violations</span>} 
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -247,7 +247,7 @@ const Guidelines = () => {
           </Col>
           <Col xs={24} sm={12} md={8}>
           <Card
-              title="No Servers for Illegal / Fraudulent Purposes" 
+              title={<span style={{ color: "#fff"}}>No Servers for Illegal / Fraudulent Purposes</span>}
               bordered={false}
               style={{
                 backgroundColor: "#2d2e36",
@@ -270,3 +270,4 @@ const Guidelines = () => {
 };
 
 export default Guidelines;
+
