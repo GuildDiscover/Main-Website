@@ -1,214 +1,352 @@
 import React from "react";
-import { Layout, Typography } from "antd";
+import { Layout, Typography, Row, Col, Card } from "antd";
 
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 
-const Privacy = () => {
+const Terms = () => {
   return (
     <Content style={{ padding: "50px", background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
-      <div
-        style={{
+    <div style={{
           textAlign: "center",
           padding: "40px",
           background: "linear-gradient(135deg, #6a11cb, #2575fc)",
           borderRadius: "15px",
           marginBottom: "50px",
-        }}
-      >
-        <Title level={1} style={{ textAlign: "center", color: "#fff" }}>
-        Privacy Policy
+          color: "#fff"
+        }}>
+      <Title level={1} style={{ color: "#fff", fontWeight: "bold" }}>
+        Terms of Services
       </Title>
-      <Paragraph style={{ textAlign: "center", color: "#fff", fontSize: "16px" }}>
-      <strong>Effective Date: 10 October 2024</strong>
-	    <br></br>
-        At <strong>Guildiscover</strong> (accessible via https://guildiscover.jst-tan.page), we are deeply committed to protecting your privacy and ensuring your experience on our website is safe, enjoyable, and anonymous. This Privacy Policy explains how we collect, use, and protect any information gathered while using our services. If you do not agree with this Privacy Policy, please do not use our service. By accessing or using Guildiscover, you consent to the terms of this policy.
-      </Paragraph>  
+      <Paragraph style={{ textAlign: "center", color: "#fff", fontSize: "18px" }}>
+        <strong>Effective Date: 10 October 2024</strong>
+        <br></br>
+        Welcome to <strong>Guildiscover</strong>! These Terms of Service (“Terms”) govern your access to and use of our website, services, and content provided by <strong>Guildiscover</strong> (“we,” “us,” or “our”). By accessing or using <strong>https://guildiscover.jst-tan.page</strong> (the “Website”), you agree to comply with these Terms.
+        <br></br>
+        <br></br>
+        Please read them carefully. If you do not agree with these Terms, you may not use the Website or its services.
+      </Paragraph>
       </div>
       <br></br>
-      <Title level={3} style={{ textAlign: "left" }}>
-        Information We Collect
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      We only collect <strong>anonymous information</strong> that helps us enhance your user experience without compromising your privacy. No personal data such as IP addresses are collected. We gather:
-        <br></br>
+      <Row gutter={[16, 16]}>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Eligibility</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+      <ul class="unordered-list">
+				    <li><strong>Age Requirement:</strong> You must be at least 13 years of age to use the Website.</li>
+				    <li><strong>Regional Restrictions:</strong> Users in certain regions, such as the Europesn Union must be at least 16 years old or higher to use the Website in compliance with local regulations.</li>
+				    <li><strong>Parental Consent:</strong> If you are under the required age for your region, you must have parental or legal guardian consent to use the Website. By allowing a minor to use this Website, parents or guardians agree to these Terms on behalf of the minor. </li>
+			</ul>
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+            <Card
+              title={<span style={{ color: "#fff"}}>Service Description</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Guildiscover is the go-to platform for discovering and listing Discord servers and bots. With a commitment to user safety, all content uploaded undergoes strict review by our dedicated moderation team, ensuring that every server and bot listed is safe, reliable, and suitable for all users. Whether you're exploring new communities or seeking powerful bots to enhance your experience, Guildiscover offers a trusted, secure space to connect with the best Discord offers.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Intellectual Property</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+          <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+      <ul class="unordered-list">
+				    <li>All content on the Website, including text, images, software, and trademarks, is owned by Guildiscover or its licensors and is protected by intellectual property laws.</li>
+				    <li>You may not copy, reproduce, or distribute any content from the Website without express written permission.</li>
+				    <li>By uploading content, you grant us a <strong>non-exclusive, worldwide, royalty-free license</strong> to use, modify, and distribute the content on the Website.</li>
+			</ul>
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+            <Card
+              title={<span style={{ color: "#fff"}}>Termination of Services</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        We reserve the right to suspend or terminate your access to the Website at our sole discretion, with or without reason, and without prior notice. Upon termination, you must cease all use of the Website immediately.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Changes to Terms</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        We reserve the right to modify these Terms at any time. Any changes will be effective immediately upon posting to the Website. You are responsible for reviewing these Terms periodically. Continued use of the Website after changes have been made constitutes your acceptance of the updated Terms.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+            <Card
+              title={<span style={{ color: "#fff"}}>Privacy Policy</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Your use of Guildiscover is governed by our Privacy Policy, available at https://guildiscover.jst-tan.page/privacy . By using the Website, you agree to the collection and use of your information as described in the Privacy Policy.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+            <Card
+              title={<span style={{ color: "#fff"}}>Third-Party Websites</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Guildiscover may contain links to third-party websites or services. We do not control or endorse these third-party sites and are not responsible for their content or privacy practices. Accessing third-party websites is at your own risk.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Service AS IS</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Guildiscover is provided on an “AS IS” and “AS AVAILABLE” basis, without warranties of any kind, express or implied. We do not guarantee that the Website will function uninterrupted or error-free, nor do we make any guarantees regarding the accuracy, reliability, or availability of the Website.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Limitation of Liability</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        To the fullest extent permitted by law, Guildiscover and its affiliates will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the Website.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Indemnification</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        You agree to indemnify and hold Guildiscover and its affiliates harmless from any claims, damages, losses, or legal fees arising out of your use of the Website, your violation of these Terms, or your violation of any rights of another.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Governing Laws</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        These Terms and any disputes related to them or the use of the Website will be governed by the laws of Malaysia. You agree to submit to the exclusive jurisdiction of the courts in Malaysia for the resolution of any disputes.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Severability</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions will continue to be valid and enforceable. 
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Waiver</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Failure to enforce any provision of these Terms by Guildiscover will not constitute a waiver of that provision or any other provision in these Terms. 
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Terminaton of Services</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+          <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        We reserve the right to modufy, suspend, or terminate the Website or any part of it at any time, for any reason, with or without notice. Upon termination, the licenses granted o you by these Terms will automatically terminate.
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Entire Agreement</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        These Terms, along with any additional terms, policies, and agreements referenced within, constitute the entire agreement between you and Guildiscover regarding the use of the Website. 
+      </Paragraph>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Prohibited Conduct</span>} 
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+        Users are not permitted to use the platform to engage in behavior that harms others. This includes but is not limited to:
           <ul class="unordered-list">
-            <li><strong>Session Information:</strong> Pages viewed, time spent on the site, and interactions.</li>
-            <li><strong>Traffic Source Information:</strong> How you reached our website (e.g., search engines, links).</li>
-            <li><strong>Performance Information:</strong> Data to monitor and improve the website's performance.</li>
-          </ul>
-        <br></br>
-        Additionally, if you choose to <strong>contact us</strong> through support, we may collect your <strong>email address, name, and any information you disclose</strong> in your communications. We use <strong>Discord</strong> as our customer support platform for processing these inquiries.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Purpose of Data Collection
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      We collect data to:
-          <br></br>
-          <ul class="unordered-list">
-            <li><strong>Provide a safe and enjoyable user experience.</strong></li>
-            <li><strong>Improve website performance and services.</strong></li>
-            <li><strong>Analyze statistical data</strong> on how our users interact with our website.</li>
-          </ul>
-          <br></br>
-          This data is collected through secure facilities to ensure that your experience on Guildiscover remains private and reliable.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Where Data is Stored & Processed
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        All collected data, such as session and performance information, is stored at our <strong>third-party providers</strong>, primarily <strong>Piwik.PRO</strong>. While this data is processed by our third-party services, it is <strong>accessed and managed in Malaysia</strong> under strict privacy and security protocols. No personal information is collected or stored.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Our Service Providers 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      To maintain the quality and performance of our services, we use the following providers:
-      <br></br>
-        <ul class="unordered-list">
-                <li><strong>Piwik.PRO (Analytics):</strong> Provides anonymous data to improve user experience. No personal data is collected.</li>
-                <li><strong>CloudFlare (Security & Performance):</strong> Ensures the security and speed of the website. It collects anonymized data on devices and browser types.</li>
-                <li><strong>Netlify (Hosting):</strong> Collects technical server data to host our website.</li>
-                <li><strong>FontAwesome & Google Fonts (Web Fonts):</strong> Load fonts and icons, collecting minimal anonymous data for font rendering.</li>
-            </ul>
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        No Cookies 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        Guildiscover does not use cookies. Our website operates without tracking mechanisms, ensuring that you can browse freely without concern for cookie-based data collection.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Total Anonymity with Piwik.PRO  
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      We use <strong>Piwik.PRO</strong> as our analytics tool to provide <strong>total anonymity</strong>. Unlike other analytics platforms like Google Analytics, Piwik.PRO allows us to set up a <strong>custom solution</strong> that ensures <strong>no personal data is collected</strong>. This means:
-          <br></br>
-          <ul class="unordered-list">
-            <li><strong>No IP tracking</strong> or personal information collection.</li>
-            <li>Data is aggregrated and anonymous, ensuring <strong>complete privacy</strong> for our users.</li>
+            <li>Harassment, bullying, or sending harmful or malicious content.</li>
+            <li>Using the platform for illegal purposes.</li>
+            <li>Uploading malicious software or viruses designed to disrupt services or harm others.</li>
           </ul>
       </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        User Rights & Limitations 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      By using Guildiscover, users agree to the following:
-          <br></br>
-          <ul class="unordered-list">
-            <li><strong>Access Restrictions:</strong> Guildiscover reserves the right to disable access to our website at our sole discretion.</li>
-            <li><strong>Use of Data and Content:</strong> Users are <strong>prohibited from using any information or data</strong> from the website for personal, commercial, or non-commercial purposes. Unauthorized use of our data is strictly prohibited.</li>
-            <li><strong>Agreement with Terms:</strong> If you do not agree with this Privacy Policy, please refrain from using our website. Your continued use constitutes acceptance of our privacy practices.</li>
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Arbitration Agreement</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+      <ul class="unordered-list">
+            <li><strong>Direct Arbitration:</strong> In the event of any dispute, claim, or controversy arising from or related to these Terms or your use of Guildiscover, you agree to first attempt to resolve the dispute with us directly through negotiation. If we are unable to reach a resolution, you and Guildiscover agree to resolve the dispute through binding arbitration, conducted on an individual basis.</li>
+            <li><strong>How Arbitration Works:</strong> Arbitration will be conducted in accordance with the rules of [Insert Arbitration Institution] and will take place in Malaysia. The arbitrator’s decision will be final and binding.</li>
+            <li><strong>No Class Actions:</strong> By agreeing to these Terms, you waive any right to participate in a class action or class-wide arbitration. Any dispute resolution will be conducted on an individual basis, and you agree not to bring any claim in a representative or collective capacity.</li>
           </ul>
       </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Responding to Government Requests 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      As we do not collect any personal information, we cannot provide such data in response to government or legal requests. Should we be required by law to respond, we will comply while maintaining the privacy and anonymity of our users.
+            </Card>
+          </Col>
+          <Col xs={24} sm={12} md={8}>
+          <Card
+              title={<span style={{ color: "#fff"}}>Content Uploads & Usages</span>}
+              bordered={false}
+              style={{
+                backgroundColor: "#2d2e36",
+                color: "#fff",
+                textAlign: "center",
+                borderRadius: "15px",
+              }}
+            >
+              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
+      <ul class="unordered-list">
+				    <li><strong>Permitted Content:</strong> You may upload information related to your Discord servers and bots for discovery by other users. </li>
+				    <li><strong>Prohibited Content:</strong> You may not upload content that contains:
+				      <ul class="unordered-list">
+                <li>NSFW (Not Safe For Work) material, including but not limited to explicit, pornographic, violent or abusive content.</li>
+                <li>Content that harms or targets othersa, including harassment, hate speech or illegal activity. </li>
+              </ul>
+            </li>
+				    <li><strong>Non-Exclusive License:</strong> By uploading any content to Guildiscover, you grant us a <strong>non-exclusive, worldwide, royalty-free license</strong> to use, modify, reproduce, distribute, and display your content for the purpose of operating, improving and promoting the Website. </li>
+				    <li><strong>Prohibited Usage:</strong> You may not use Guildiscover to harm others, such as attempting to hack, harm or otherwise interfere with the experience of other users or third parties. </li>
+				  </ul>
       </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Children's Privacy
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      Guildiscover does not knowingly collect any personal information from children under the age of 13. If we learn that a child under 13 has provided personal information, we will take steps to delete it immediately.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Security Management Practices
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      At Guildiscover, we prioritize the security of the information we collect. Our security measures include:
-          <br></br>
-          <ul class="unordered-list">
-            <li><strong>Data Encryption:</strong> All data transmitted to and from the website is encrypted.</li>
-            <li><strong>Access Control:</strong> Only authorized personnel have access to the data.</li>
-            <li><strong>Regular Audits:</strong> We conduct security audits to ensure vulnerabilities are identified and addressed.</li>
-          </ul>
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Our Commitment To User Privacy
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        We deeply care about our users' privacy. We <strong>do not sell or share personal information</strong> with third parties. The data we collect through anonymous analytics is used solely to improve the quality and performance of our website and services.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Compliance with Privacy Laws
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-      Guildiscover complies with all major global privacy regulations, including:
-          <br></br>
-          <ul class="unordered-list">
-            <li><strong>GDPR (General Data Protection Regulation):</strong> Ensuring no personal data is collected or shared.</li>
-            <li><strong>PDPA (Personal Data Protection Act):</strong> We comply with Malaysia’s PDPA standards by avoiding personal data collection.</li>
-            <li><strong>CCPA (California Consumer Privacy Act):</strong> In full compliance with CCPA, we do not collect or process personal information from our users.</li>
-          </ul>
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Links to Other Websites 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        Guildiscover may include links to third-party websites. Please be aware that we are not responsible for the privacy practices of these external sites. We encourage users to review the privacy policies of any third-party websites they visit.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Disclaimer 
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        The content and services provided by Guildiscover are for general information purposes only. We make no guarantees regarding the accuracy or availability of information on our website. Guildiscover is not liable for any damages resulting from the use of our services or data.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Validity of Terms
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        This Privacy Policy may be updated or modified at any time. We encourage users to review the policy periodically. Your continued use of Guildiscover after changes have been made to this policy constitutes your acceptance of the updated terms.
-      </Paragraph>
-      <br></br>
-      
-      <Title level={3} style={{ textAlign: "left" }}>
-        Contact Us
-      </Title>
-      <Paragraph style={{ textAlign: "left", color: "#555", fontSize: "16px" }}>
-        If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
-            <br></br>
-            <br></br>
-            <strong>Guildiscover Team</strong>
-            <ul class="unordered-list">
-                <li><strong>Email:</strong> guildiscover@jst-tan.page</li>
-                <li><strong>Website:</strong> https://guildiscover.jst-tan.page</li>
-            </ul>
-            <br></br>
-            By using Guildiscover, you agree to the terms of this Privacy Policy. If you do not agree, please refrain from using our website. 
-      </Paragraph>
+            </Card>
+          </Col>
+        </Row>
     </Content>
   );
 };
 
-export default Privacy;
+export default Terms;
