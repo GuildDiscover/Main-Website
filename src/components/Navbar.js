@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout, Menu, Drawer, Button } from "antd";
+import { Layout, Menu, Drawer } from "antd";
 import { Link } from "react-router-dom";
 
 const { Header } = Layout;
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const menuItems = [
     { label: <Link to="/">Home</Link>, key: "home" },
-    { label: <Link to="/about">About</Link>, key: "about" },
+    { label: <Link to="/about"> About</Link>, key: "about" },
     {
       label: (
         <Link to="https://discord.gg/z7DC9tTyEH" target={"_blank"}>
@@ -34,13 +34,10 @@ const Navbar = () => {
   ];
 
   return (
-    <Header style={{ background: "#fff" }}>
+    <Header style={{ background: "#80ED99" }}>
       <div className="logo" />
-      <Menu mode="horizontal" items={menuItems} />
-      <Button type="primary" onClick={showDrawer} style={{ marginLeft: "auto" }}>
-        Menu
-      </Button>
-      <Drawer title="Menu" placement="right" onClose={onClose} open={visible}>
+      <Menu mode="horizontal" items={menuItems} style={{ background: "#80ED99" }} />
+      <Drawer title="Menu" placement="left" onClose={onClose} open={visible}>
         <Menu items={menuItems} onClick={onClose} />
       </Drawer>
     </Header>

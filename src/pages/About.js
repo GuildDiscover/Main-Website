@@ -13,7 +13,7 @@ const { Title, Paragraph } = Typography;
 
 const About = () => {
   return (
-    <Content style={{ backgroundColor: "#1e1f26", color: "#fff", padding: "50px 20px" }}>
+    <Content style={{ background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
       {/* Hero Section */}
       <div
         style={{
@@ -24,7 +24,7 @@ const About = () => {
           marginBottom: "50px",
         }}
       >
-        <Title level={1} style={{ color: "#fff", fontWeight: "bold", fontSize: "3rem" }}>
+        <Title level={1} style={{ color: "#fff", fontWeight: "bold" }}>
           Welcome to Guildiscover
         </Title>
         <Paragraph style={{ fontSize: "18px", maxWidth: "700px", margin: "0 auto", color: "#f0f0f0" }}>
@@ -80,7 +80,7 @@ const About = () => {
 
       {/* Specialty Section */}
       <Divider style={{ borderColor: "#444", marginBottom: "50px" }}>
-        <Title level={2} style={{ color: "#fff" }}>
+        <Title level={2} style={{ color: "yellow" }}>
           What Makes Us Special
         </Title>
       </Divider>

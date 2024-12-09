@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Guildiscover",
+  "name": "An amazing directory for all Discord server community.",
   "icons": [
     {
       "src": "favicon.ico",
