@@ -13,13 +13,16 @@ const { Title, Paragraph } = Typography;
 
 const About = () => {
   return (
-    <Content style={{ background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57", color: "#fff", padding: "50px 20px" }}>
+    <Content
+      style={{ background: "linear-gradient(135deg, #6a11cb, #2575fc)", color: "#fff", padding: "50px 20px" }}
+    >
       {/* Hero Section */}
       <div
         style={{
           textAlign: "center",
           padding: "40px",
-          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          background: "black",
           borderRadius: "15px",
           marginBottom: "50px",
         }}
@@ -52,7 +55,10 @@ const About = () => {
             </Title>
             <Paragraph style={{ textAlign: "center", color: "#d1d1d1", fontSize: "16px" }}>
               We aim to create a platform where everyone can discover communities tailored to their interests
-              effortlessly and confidently. A platform where everyone can discover amazing communities in their interests, on the platform. We aim to stop the Dead Internet Theory, by assisting people to connect with each other on amazing communities tailored to their interests, on Guildiscover today. 
+              effortlessly and confidently. A platform where everyone can discover amazing communities in
+              their interests, on the platform. We aim to stop the Dead Internet Theory, by assisting people
+              to connect with each other on amazing communities tailored to their interests, on Guildiscover
+              today.
             </Paragraph>
           </Card>
         </Col>
@@ -72,7 +78,11 @@ const About = () => {
               Our Vision
             </Title>
             <Paragraph style={{ textAlign: "center", color: "#d1d1d1", fontSize: "16px" }}>
-              We aim to build a future where all communities could thrive, and members could participate in communities suited to their interests. We planned to build a connected world where communities thrive, and people find spaces that feel like home on the internet. Our vision is to build a place where everyone could meet new friends on the Internet, through our platform to discover communities. 
+              We aim to build a future where all communities could thrive, and members could participate in
+              communities suited to their interests. We planned to build a connected world where communities
+              thrive, and people find spaces that feel like home on the internet. Our vision is to build a
+              place where everyone could meet new friends on the Internet, through our platform to discover
+              communities.
             </Paragraph>
           </Card>
         </Col>
@@ -101,7 +111,10 @@ const About = () => {
               Free Publicity
             </Title>
             <Paragraph style={{ textAlign: "center", color: "#d1d1d1", fontSize: "16px" }}>
-              Guildiscover is a place for you to publicise your Discord servers and communities alike. Guildiscover assist you to promote your servers to as many users as possible, to ensure that your server get the growth it needed. Promote your server to a global audience and reach thousands of users with ease through Guildiscover.
+              Guildiscover is a place for you to publicise your Discord servers and communities alike.
+              Guildiscover assist you to promote your servers to as many users as possible, to ensure that
+              your server get the growth it needed. Promote your server to a global audience and reach
+              thousands of users with ease through Guildiscover.
             </Paragraph>
           </Card>
         </Col>
@@ -121,7 +134,10 @@ const About = () => {
               Good Moderation
             </Title>
             <Paragraph style={{ textAlign: "center", color: "#d1d1d1", fontSize: "16px" }}>
-              Guildiscover has a good moderation team and policy. We heavily monitored to ensure high-quality listings and a safe experience for all users. Guildiscover team reviewed and filtered through each and all communities carefully and strictly, which means our platform only have server that is safe that had passed our review.
+              Guildiscover has a good moderation team and policy. We heavily monitored to ensure high-quality
+              listings and a safe experience for all users. Guildiscover team reviewed and filtered through
+              each and all communities carefully and strictly, which means our platform only have server that
+              is safe that had passed our review.
             </Paragraph>
           </Card>
         </Col>
@@ -141,7 +157,9 @@ const About = () => {
               Easy Discovery
             </Title>
             <Paragraph style={{ textAlign: "center", color: "#d1d1d1", fontSize: "16px" }}>
-              Discover thousands of amazing communities across multiple platforms through Guildiscover today. With an unique approach, we made all server to be discover easily. We made our platform for everyone to discover amazing communities with ease on the platform today. 
+              Discover thousands of amazing communities across multiple platforms through Guildiscover today.
+              With an unique approach, we made all server to be discover easily. We made our platform for
+              everyone to discover amazing communities with ease on the platform today.
             </Paragraph>
           </Card>
         </Col>
