@@ -6,45 +6,37 @@ import { UsergroupAddOutlined } from "@ant-design/icons";
 const { Paragraph } = Typography;
 
 const ServerCard = ({ server }) => {
-  // Define tag colors to add variety
-  const tagColors = ["magenta", "green", "volcano", "blue", "purple", "orange"];
-
-  const customButtonStyle = {
-    backgroundColor: "#44475a", // Slightly lighter dark shade
-    color: "#f8f8f2", // Light text color
-    border: "none",
-    padding: "10px 16px",
-    fontWeight: "bold",
-    borderRadius: "5px",
-    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)", // Subtle shadow
-    transition: "background-color 0.3s ease",
-  };
-
-  const hoverButtonStyle = {
-    backgroundColor: "#6272a4", // Lighter blue shade for hover effect
-  };
+  const tagColors = ["#FF79C6", "#50FA7B", "#FFB86C", "#8BE9FD", "#BD93F9", "#FF5555"];
 
   return (
     <Card
       hoverable
       style={{
-        borderRadius: "10px",
+        borderRadius: "12px",
         overflow: "hidden",
-        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
-        backgroundColor: "#2d2e36", // Dark background color for the card
+        boxShadow: "0 8px 24px rgba(0, 0, 0, 0.3)",
+        backgroundColor: "#282A36",
         textAlign: "center",
-        color: "#f8f8f2", // Light text color for contrast
+        color: "#F8F8F2",
+        border: "0",
+        transition: "transform 0.1s ease-in-out",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "scale(1.02)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "scale(1)";
       }}
     >
-      {/* Round Server Image */}
       <div
         style={{
-          width: "100px",
-          height: "100px",
+          width: "110px",
+          height: "110px",
           margin: "0 auto",
           borderRadius: "50%",
           overflow: "hidden",
-          border: "3px solid #6272a4", // Border color matching the dark theme
+          border: "4px solid #6272A4",
+          boxShadow: "0 4px 12px rgba(98, 114, 164, 0.5)",
         }}
       >
         <img
@@ -58,65 +50,76 @@ const ServerCard = ({ server }) => {
         />
       </div>
 
-      {/* Server Name */}
-      <div style={{ marginTop: "15px", fontSize: "1.2em", fontWeight: "600", color: "#f8f8f2" }}>
+      <div style={{ marginTop: "18px", fontSize: "1.3em", fontWeight: "600", color: "#BD93F9" }}>
         {server.name}
       </div>
 
-      {/* Description */}
-      <Paragraph ellipsis={{ rows: 2 }} style={{ color: "#bbbbbb", marginBottom: "15px", marginTop: "10px" }}>
+      <Paragraph ellipsis={{ rows: 2 }} style={{ color: "#F8F8F2", marginBottom: "18px", marginTop: "12px" }}>
         {server.description}
       </Paragraph>
 
-      {/* Category Tags */}
-      <div style={{ marginTop: "10px" }}>
+      <div style={{ marginTop: "12px", marginBottom: "15px" }}>
         {server.categories.map((category, index) => (
           <Tag
             color={tagColors[index % tagColors.length]}
             key={index}
-            style={{ fontSize: "0.85em", padding: "5px 10px" }}
+            style={{
+              fontSize: "0.75em",
+              padding: "2px 8px",
+              margin: "0 4px 6px 0",
+              borderRadius: "4px",
+              fontWeight: "500",
+              backgroundColor: `${tagColors[index % tagColors.length]}30`,
+              border: `1px solid ${tagColors[index % tagColors.length]}50`,
+              color: tagColors[index % tagColors.length],
+              transition: "background-color 0.3s ease",
+            }}
           >
             {category}
           </Tag>
         ))}
       </div>
 
-      {/* Member Count */}
       <div
         style={{
-          marginTop: "10px",
+          marginTop: "12px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          fontSize: "0.95em",
-          color: "#bbbbbb", // Light gray text for member count
+          fontSize: "1em",
+          color: "#8BE9FD",
           fontWeight: "500",
         }}
       >
-        <UsergroupAddOutlined style={{ marginRight: "5px", color: "#6272a4" }} />
+        <UsergroupAddOutlined style={{ marginRight: "6px", color: "#8BE9FD" }} />
         {server.member_count} Members
       </div>
 
       <Link to={`/server/${server.id}`}>
-      <Button
-        style={{
-          backgroundColor: "#44475a",
-          color: "#f8f8f2",
-          border: "none",
-          padding: "10px 16px",
-          fontWeight: "bold",
-          borderRadius: "5px",
-          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
-          transition: "background-color 0.3s ease",
-          marginTop: "25px",
-        }}
-        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#6272a4")}
-        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#44475a")}
-      >
-        View Details
-      </Button>
+        <Button
+          style={{
+            backgroundColor: "#6272A4",
+            color: "#F8F8F2",
+            border: "none",
+            padding: "10px 20px",
+            fontWeight: "bold",
+            borderRadius: "8px",
+            boxShadow: "0px 4px 8px rgba(98, 114, 164, 0.3)",
+            transition: "all 0.3s ease",
+            marginTop: "25px",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "#7B88B5";
+            e.currentTarget.style.transform = "translateY(-2px)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "#6272A4";
+            e.currentTarget.style.transform = "translateY(0)";
+          }}
+        >
+          View Details
+        </Button>
       </Link>
-
     </Card>
   );
 };
