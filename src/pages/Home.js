@@ -157,7 +157,8 @@ const Home = () => {
       style={{
         padding: "50px",
         // background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57",
-        background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        background: "black",
         color: "#fff",
         padding: "50px 20px",
       }}
@@ -168,7 +169,8 @@ const Home = () => {
           textAlign: "center",
           padding: "60px 40px",
           // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-          background: "black",
+          // background: "black",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
           borderRadius: "20px",
           marginBottom: "70px",
           boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
@@ -392,8 +394,8 @@ const Home = () => {
         style={{
           textAlign: "center",
           padding: "40px",
-          // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-          background: "black",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          // background: "black",
           borderRadius: "15px",
           marginBottom: "35px",
           marginTop: "100px",

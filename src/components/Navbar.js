@@ -46,7 +46,7 @@ const Navbar = () => {
         }}
       >
         <div className="logo" style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
-          Guildiscover
+          <Link to={"/"}>Guildiscover</Link>
         </div>
         <Menu
           mode="horizontal"

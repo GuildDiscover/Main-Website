@@ -14,7 +14,12 @@ const { Title, Paragraph } = Typography;
 const About = () => {
   return (
     <Content
-      style={{ background: "linear-gradient(135deg, #6a11cb, #2575fc)", color: "#fff", padding: "50px 20px" }}
+      style={{
+        // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        background: "black",
+        color: "#fff",
+        padding: "50px 20px",
+      }}
     >
       {/* Hero Section */}
       <div
@@ -22,7 +27,8 @@ const About = () => {
           textAlign: "center",
           padding: "40px",
           // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-          background: "black",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          // background: "black",
           borderRadius: "15px",
           marginBottom: "50px",
         }}

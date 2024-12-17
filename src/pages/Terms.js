@@ -9,7 +9,8 @@ const Terms = () => {
     <Content
       style={{
         padding: "50px",
-        background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+        background: "black",
         color: "#fff",
         padding: "50px 20px",
       }}
@@ -18,8 +19,8 @@ const Terms = () => {
         style={{
           textAlign: "center",
           padding: "40px",
-          // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-          background: "black",
+          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
+          // background: "black",
           borderRadius: "15px",
           marginBottom: "50px",
           color: "#fff",
