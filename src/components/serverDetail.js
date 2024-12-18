@@ -17,7 +17,7 @@ function ServerDetails({ servers }) {
     <div
     style={{
       textAlign: "center",
-      background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57",
+      background: "black",
     }}
   >
     <div style={{ padding: "20px" }}>
@@ -75,6 +75,10 @@ function ServerDetails({ servers }) {
     </div>
     </div>  
   );
+}
+
+export default ServerDetails;
+
 }
 
 export default ServerDetails;
