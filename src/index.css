@@ -13,7 +13,8 @@ code {
 html,
 body {
   height: 100%; /* Ensure the entire viewport is covered */
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 #root,
