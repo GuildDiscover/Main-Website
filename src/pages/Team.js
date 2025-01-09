@@ -46,7 +46,7 @@ const Team = () => {
   return (
     <Content
       style={{
-        padding: "50px",
+        // padding: "50px",
         // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
         background: "black",
         padding: "50px 20px",

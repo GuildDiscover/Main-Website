@@ -6,7 +6,12 @@ const { Title, Paragraph } = Typography;
 
 const Privacy = () => {
   return (
-    <Content style={{ padding: "50px", background: "black", color: "#fff", padding: "50px 20px" }}>
+    <Content style={{
+        // padding: "50px",
+        background: "black",
+        color: "#fff",
+        padding: "50px 20px"
+    }}>
       <div
         style={{
           textAlign: "center",
@@ -41,7 +46,7 @@ const Privacy = () => {
               <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
       We only collect <strong>anonymous information</strong> that helps us enhance your user experience without compromising your privacy. No personal data such as IP addresses are collected. We gather:
         <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>Session Information:</strong> Pages viewed, time spent on the site, and interactions.</li>
             <li><strong>Traffic Source Information:</strong> How you reached our website (e.g., search engines, links).</li>
             <li><strong>Performance Information:</strong> Data to monitor and improve the website's performance.</li>
@@ -65,7 +70,7 @@ const Privacy = () => {
               <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
       By using Guildiscover, users agree to the following:
           <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>Access Restrictions:</strong> Guildiscover reserves the right to disable access to our website at our sole discretion.</li>
             <li><strong>Use of Data and Content:</strong> Users are <strong>prohibited from using any information or data</strong> from the website for personal, commercial, or non-commercial purposes. Unauthorized use of our data is strictly prohibited.</li>
             <li><strong>Agreement with Terms:</strong> If you do not agree with this Privacy Policy, please refrain from using our website. Your continued use constitutes acceptance of our privacy practices.</li>
@@ -87,7 +92,7 @@ const Privacy = () => {
           <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
       To maintain the quality and performance of our services, we use the following providers:
       <br></br>
-        <ul class="unordered-list">
+        <ul className={"unordered-lis"}>
                 <li><strong>Piwik.PRO (Analytics):</strong> Provides anonymous data to improve user experience. No personal data is collected.</li>
                 <li><strong>CloudFlare (Security & Performance):</strong> Ensures the security and speed of the website. It collects anonymized data on devices and browser types.</li>
                 <li><strong>Netlify (Hosting):</strong> Collects technical server data to host our website.</li>
@@ -110,7 +115,7 @@ const Privacy = () => {
              <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
       We collect data to:
           <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>Provide a safe and enjoyable user experience.</strong></li>
             <li><strong>Improve website performance and services.</strong></li>
             <li><strong>Analyze statistical data</strong> on how our users interact with our website.</li>
@@ -135,7 +140,7 @@ const Privacy = () => {
       At Guildiscover, we prioritize the security of the information we collect. Our security measures include:
           <br></br>
           <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>Data Encryption:</strong> All data transmitted to and from the website is encrypted.</li>
             <li><strong>Access Control:</strong> Only authorized personnel have access to the data.</li>
             <li><strong>Regular Audits:</strong> We conduct security audits to ensure vulnerabilities are identified and addressed.</li>
@@ -158,7 +163,7 @@ const Privacy = () => {
       We use <strong>Piwik.PRO</strong> as our analytics tool to provide <strong>total anonymity</strong>. Unlike other analytics platforms like Google Analytics, Piwik.PRO allows us to set up a <strong>custom solution</strong> that ensures <strong>no personal data is collected</strong>. This means:
       <br></br>
           <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>No IP tracking</strong> or personal information collection.</li>
             <li>Data is aggregrated and anonymous, ensuring <strong>complete privacy</strong> for our users.</li>
           </ul>
@@ -307,7 +312,7 @@ const Privacy = () => {
               <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
       Guildiscover complies with all major global privacy regulations, including:
           <br></br>
-          <ul class="unordered-list">
+          <ul className={"unordered-lis"}>
             <li><strong>GDPR (General Data Protection Regulation):</strong> Ensuring no personal data is collected or shared.</li>
             <li><strong>PDPA (Personal Data Protection Act):</strong> We comply with Malaysia’s PDPA standards by avoiding personal data collection.</li>
             <li><strong>CCPA (California Consumer Privacy Act):</strong> In full compliance with CCPA, we do not collect or process personal information from our users.</li>
@@ -331,7 +336,7 @@ const Privacy = () => {
             <br></br>
             <br></br>
             <strong>Guildiscover Team</strong>
-            <ul class="unordered-list">
+            <ul className={"unordered-lis"}>
                 <li><strong>Email:</strong> guildiscover@jst-tan.page</li>
                 <li><strong>Website:</strong> https://guildiscover.jst-tan.page</li>
             </ul>

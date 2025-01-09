@@ -38,7 +38,7 @@ const Servers = () => {
   return (
     <Content
       style={{
-        padding: "50px",
+        // padding: "50px",
         // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
         background: "black",
         color: "#fff",

@@ -8,7 +8,7 @@ const Guidelines = () => {
   return (
     <Content
       style={{
-        padding: "50px",
+        // padding: "50px",
         // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
         background: "black",
         color: "#fff",
@@ -54,7 +54,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-list"}>
                 <li>
                   <strong>Treat Others Kindly:</strong> We expect all members to show respect to each other.
                   Bullying, harassing, or threatening others is not allowed.
@@ -83,7 +83,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Illegal Goods:</strong> Servers selling regulated goods (weapons, drugs, etc.)
                   without proper licenses are <strong>not allowed</strong>.
@@ -112,7 +112,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>No Extremist Content:</strong> Servers promoting extremism or violent ideologies are
                   not allowed.
@@ -141,7 +141,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Self-Promotion is Welcome:</strong> Guildiscover is built for self-promotion! Feel
                   free to share your servers, but don’t flood the platform with repetitive or irrelevant
@@ -171,7 +171,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>No Doxxing:</strong> Sharing someone’s private information without their consent is{" "}
                   <strong>strictly prohibited</strong>.
@@ -200,7 +200,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Illegal Goods:</strong> Servers selling regulated goods (weapons, drugs, etc.)
                   without proper licenses are <strong>not allowed</strong>.
@@ -229,7 +229,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>No Adult Content:</strong> NSFW content such as pornography or any explicit material
                   is <strong>not allowed</strong> anywhere on the platform.
@@ -263,7 +263,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Obey the Laws of Your Country and Malaysia:</strong> You must follow the laws of
                   your country of residence as well as Malaysian laws when using our platform or listing
@@ -294,7 +294,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Reviews Must Be Genuine:</strong> Users cannot be forced to leave reviews for your
                   server or content. Reviews should come voluntarily from genuine experiences.
@@ -319,7 +319,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>No Terrorism / Gangs:</strong> Servers that promote or glorify terrorism, gangs, or
                   trafficking are banned.
@@ -344,7 +344,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>How to Report:</strong> If you come across content that violates these guidelines,
                   report it to us through our Discord server or email us at{" "}
@@ -367,7 +367,7 @@ const Guidelines = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Illegal Intentions</strong> Servers created to facilitate fraud, scams, or any other
                   illegal activities will be removed.

@@ -8,7 +8,7 @@ const Terms = () => {
   return (
     <Content
       style={{
-        padding: "50px",
+        // padding: "50px",
         // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
         background: "black",
         color: "#fff",
@@ -56,7 +56,7 @@ const Terms = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Age Requirement:</strong> You must be at least 13 years of age to use the Website.
                 </li>
@@ -106,7 +106,7 @@ const Terms = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   All content on the Website, including text, images, software, and trademarks, is owned by
                   Guildiscover or its licensors and is protected by intellectual property laws.
@@ -353,7 +353,7 @@ const Terms = () => {
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
               Users are not permitted to use the platform to engage in behavior that harms others. This
               includes but is not limited to:
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>Harassment, bullying, or sending harmful or malicious content.</li>
                 <li>Using the platform for illegal purposes.</li>
                 <li>Uploading malicious software or viruses designed to disrupt services or harm others.</li>
@@ -373,7 +373,7 @@ const Terms = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Direct Arbitration:</strong> In the event of any dispute, claim, or controversy
                   arising from or related to these Terms or your use of Guildiscover, you agree to first
@@ -408,14 +408,14 @@ const Terms = () => {
             }}
           >
             <Paragraph style={{ textAlign: "left", color: "#fff", fontSize: "16px" }}>
-              <ul class="unordered-list">
+              <ul className={"unordered-lis"}>
                 <li>
                   <strong>Permitted Content:</strong> You may upload information related to your Discord
                   servers and bots for discovery by other users.{" "}
                 </li>
                 <li>
                   <strong>Prohibited Content:</strong> You may not upload content that contains:
-                  <ul class="unordered-list">
+                  <ul className={"unordered-lis"}>
                     <li>
                       NSFW (Not Safe For Work) material, including but not limited to explicit, pornographic,
                       violent or abusive content.
