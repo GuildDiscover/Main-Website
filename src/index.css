@@ -15,6 +15,8 @@ body {
   height: 100%; /* Ensure the entire viewport is covered */
   margin: 0 !important;
   padding: 0 !important;
+  background-color: black;
+  color: white;
 }
 
 #root,

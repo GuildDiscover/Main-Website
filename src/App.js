@@ -14,22 +14,26 @@ import Guidelines from "./pages/Guidelines";
 import Navbar from "./components/Navbar";
 import AppFooter from "./components/Footer";
 
+import "./App.css";
+
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/server-list" element={<ServerList servers={serverData} />} />
-        <Route path="/server/:id" element={<ServerDetail servers={serverData} />} />
-        <Route path="/terms-and-conditions" element={<Terms />} />
-        <Route path="/privacy-policy" element={<Privacy />} />
-        <Route path="/guidelines" element={<Guidelines />} />
-      </Routes>
-      <AppFooter />
+      <div className={"content"}>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/team" element={<Team/>}/>
+          <Route path="/server-list" element={<ServerList servers={serverData}/>}/>
+          <Route path="/server/:id" element={<ServerDetail servers={serverData}/>}/>
+          <Route path="/terms-and-conditions" element={<Terms/>}/>
+          <Route path="/privacy-policy" element={<Privacy/>}/>
+          <Route path="/guidelines" element={<Guidelines/>}/>
+        </Routes>
+      </div>
+      <AppFooter/>
     </Router>
   );
 }

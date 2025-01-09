@@ -6,12 +6,7 @@ const { Title, Paragraph } = Typography;
 
 const Privacy = () => {
   return (
-    <Content style={{
-        // padding: "50px",
-        background: "black",
-        color: "#fff",
-        padding: "50px 20px"
-    }}>
+    <Content>
       <div
         style={{
           textAlign: "center",
