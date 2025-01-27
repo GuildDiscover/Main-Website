@@ -77,8 +77,9 @@ function ServerDetails({ servers }) {
   );
 }
 
-export default ServerDetails;
-
-}
+// Is it important?
+// export default ServerDetails;
+//
+// }
 
 export default ServerDetails;

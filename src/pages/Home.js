@@ -153,16 +153,7 @@ const Home = () => {
   ];
 
   return (
-    <Content
-      style={{
-        padding: "50px",
-        // background: "linear-gradient(#80ED99, #45DF81, #0AD1C8, #14919B, #0B6477, #213A57",
-        // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-        background: "black",
-        color: "#fff",
-        padding: "50px 20px",
-      }}
-    >
+    <Content>
       {/* Hero Section */}
       <div
         style={{

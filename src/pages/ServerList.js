@@ -36,15 +36,7 @@ const Servers = () => {
   }, [searchTerm]);
 
   return (
-    <Content
-      style={{
-        padding: "50px",
-        // background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-        background: "black",
-        color: "#fff",
-        padding: "50px 20px",
-      }}
-    >
+    <Content>
       <div
         style={{
           textAlign: "center",

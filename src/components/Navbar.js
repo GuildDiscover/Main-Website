@@ -67,7 +67,7 @@ const Navbar = () => {
             height: "100%",
           }}
         >
-          <div className="logo" style={{ fontSize: "1.5rem", fontWeight: "bold", whiteSpace: "nowrap" }}>
+          <div className={"logo"} style={{ fontSize: "1.5rem", fontWeight: "bold", whiteSpace: "nowrap" }}>
             <Link to={"/"} style={{ color: "white" }}>
               Guildiscover
             </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
           )}
           {isMobile && (
             <MenuOutlined
-              className="menu-icon"
+              className={"menu-icon"}
               onClick={showDrawer}
               style={{
                 fontSize: "1.5rem",
