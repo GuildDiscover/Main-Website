@@ -16,7 +16,8 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "An amazing server and an useful moderation examples for all communities to take inspiration from. It is also maintained by the team of Guildiscover platform, which is maintained into one of the highest standards possible. It also has many amazing channels for everyone to chat in, while some are still remaining for resources related to Guildiscover. ",
-    "moderator_date": "22 November 2024"
+    "moderator_date": "22 November 2024",
+    "owner_contact_link": "https://discordapp.com/users/1203273411627847763"
   },
   {
     "id": 2,
@@ -26,7 +27,15 @@
     "owner_id": "Jst Tan (1203273411627847763)",
     "invite_link": "https://discord.gg/c6kf2ZEyr4",
     "member_count": 21,
-    "categories": ["Open-Source", "opensource", "Technology", "Tech", "Hackathon", "Programming", "Community"],
+    "categories": [
+      "Open-Source",
+      "opensource",
+      "Technology",
+      "Tech",
+      "Hackathon",
+      "Programming",
+      "Community"
+    ],
     "created_at": "2024-09-13T21:53:23Z",
     "boost_level": 0,
     "language": "English",
@@ -35,7 +44,8 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "It is an awesome server, with many channels aligning the interests of open source contributors. It also contains many useful channels for documentation, and many forums for threaded discussions related to open source. Being a part of Unity Sphere, it also give the team a trustworthy reputation, for maintaining a quality and safe community for everyone. Overall, it is worth to join. ",
-    "moderator_date": "18 November 2024"
+    "moderator_date": "18 November 2024",
+    "owner_contact_link": ""
   },
   {
     "id": 3,
@@ -54,9 +64,10 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "This is a nice server, with many channels suitable for any writers alike. It is very recommended for established as well as aspiring server alike. This community being apart of Unity Sphere also give it a good reputation for maintaining a welcoming server alike. ",
-    "moderator_date": "20 November 2024"
+    "moderator_date": "20 November 2024",
+    "owner_contact_link": ""
   },
-  { 
+  {
     "id": 4,
     "name": "TechVerse",
     "description": "TechVerse, under Unity Sphere led by Jst Tan, is a vibrant community for tech enthusiasts to connect, learn, and innovate in areas like Web3, programming, and the Metaverse. With cutting-edge discussions, collaborative projects, expert-led workshops, and a resource hub, it’s the ultimate space to explore and shape the future of technology.",
@@ -73,7 +84,8 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "An amazing server for all discussions related to technology. A place recommended to talk about technology, tech trends, Web3 and much more. Being apart of Unity Sphere, with a trustworthy reputation for good moderation, it is a community recommended for everyone interested in technology alike. ",
-    "moderator_date": "20 November 2024"
+    "moderator_date": "20 November 2024",
+    "owner_contact_link": ""
   },
   {
     "id": 5,
@@ -92,9 +104,10 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "An interesting server for all gamers alike. A server with many channels for all types of gaming discussions. A community for all gamers and recommended for all gamers alike. It also has good moderation principles too, through Unity Sphere. Everyone is encouraged to check it out.",
-    "moderator_date": "21 November 2024"
+    "moderator_date": "21 November 2024",
+    "owner_contact_link": ""
   },
-  { 
+  {
     "id": 6,
     "name": "Jeston's Guild",
     "description": "A small cozy place made by Jeston for all of his projects alike. ",
@@ -111,7 +124,8 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "Jeston’s Guild is an exciting and well-curated personal server. It has various types of amazing and exciting channels for all types of members. A personal place by Jst Tan, to welcome all types of members to join, hangout, chat and much more. A place worthy to join and chat in. ",
-    "moderator_date": "21 November 2024"
+    "moderator_date": "21 November 2024",
+    "owner_contact_link": ""
   },
   {
     "id": 7,
@@ -130,7 +144,8 @@
     "status": "New",
     "rating": 4,
     "moderator_review": "An exciting server with a promising mission by James Pepper, as it is hard to find communities with such kind-hearted mission. They are also good to work with, and will try their best to assist you, which is a good bonus. They also operated their own website too, with excellent quality through WordPress and BuddyBoss. Overall, it is a nice community and cannot wait to see its grow. ",
-    "moderator_date": "22 November 2024"
+    "moderator_date": "22 November 2024",
+    "owner_contact_link": ""
   },
   {
     "id": 8,
@@ -149,7 +164,8 @@
     "status": "Semi-Active",
     "rating": 5,
     "moderator_review": "It is an amazing server, with kind and helpful staff. It is a vibrant community, with an active team of moderators and administrators too. It is highly encouraged for everyone that wanted to chill out to come and join this exciting community. ",
-    "moderator_date": "22 November 2024"
+    "moderator_date": "22 November 2024",
+    "owner_contact_link": ""
   },
   {
     "id": 9,
@@ -165,16 +181,17 @@
     "language": "English",
     "country": "US",
     "logo": "https://example.com/images/crypto-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 10,
     "name": "Music Lovers",
     "description": "Share your favorite music and discover new artists.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 110,
     "invite_link": "https://discord.gg/musiclovers",
     "member_count": 1200,
@@ -184,10 +201,11 @@
     "language": "English",
     "country": "DE",
     "logo": "https://example.com/images/music-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 11,
@@ -206,7 +224,8 @@
     "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 12,
@@ -222,10 +241,11 @@
     "language": "English",
     "country": "IT",
     "logo": "https://example.com/images/fashion-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 13,
@@ -241,16 +261,17 @@
     "language": "Spanish",
     "country": "ES",
     "logo": "https://example.com/images/travel-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 14,
     "name": "History Buffs",
     "description": "For those who love learning about history and sharing insights.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 114,
     "invite_link": "https://discord.gg/historybuffs",
     "member_count": 600,
@@ -263,13 +284,14 @@
     "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 15,
     "name": "Science Society",
     "description": "A community for science enthusiasts to discuss recent discoveries.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 115,
     "invite_link": "https://discord.gg/sciencesociety",
     "member_count": 750,
@@ -279,10 +301,11 @@
     "language": "English",
     "country": "AU",
     "logo": "https://example.com/images/science-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 16,
@@ -298,10 +321,11 @@
     "language": "French",
     "country": "FR",
     "logo": "https://example.com/images/art-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 17,
@@ -317,16 +341,17 @@
     "language": "English",
     "country": "IN",
     "logo": "https://example.com/images/start-up-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 18,
     "name": "Language Exchange",
     "description": "Meet people to practice different languages and learn together.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 118,
     "invite_link": "https://discord.gg/languageexchange",
     "member_count": 1100,
@@ -336,16 +361,17 @@
     "language": "English",
     "country": "US",
     "logo": "https://example.com/images/language-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 19,
     "name": "Meme Universe",
     "description": "Share and laugh at the latest memes with like-minded people.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 119,
     "invite_link": "https://discord.gg/memeuniverse",
     "member_count": 1500,
@@ -355,16 +381,17 @@
     "language": "English",
     "country": "US",
     "logo": "https://example.com/images/meme-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   },
   {
     "id": 20,
     "name": "DIY Makers",
     "description": "Connect with DIY enthusiasts and share your latest projects.",
-    "long_description": "", 
+    "long_description": "",
     "owner_id": 120,
     "invite_link": "https://discord.gg/diymakers",
     "member_count": 300,
@@ -374,9 +401,10 @@
     "language": "English",
     "country": "US",
     "logo": "https://example.com/images/diy-logo.jpg",
-    "status": "active", 
+    "status": "active",
     "rating": 4,
     "moderator_review": "Lorem ipsum",
-    "moderator_date": "a"
+    "moderator_date": "a",
+    "owner_contact_link": ""
   }
 ]
