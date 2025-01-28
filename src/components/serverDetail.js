@@ -102,10 +102,10 @@ function ServerDetails({ servers }) {
                 Join Server
               </Button>
 
-              {server.owner_contact_link && (
+              {server.owner_contact_link && server.owner_contact_link.discord && (
                 <>
                   &nbsp;&nbsp;
-                  <Button type="primary" href={server.owner_contact_link} target="_blank">
+                  <Button type="primary" href={server.owner_contact_link.discord} target="_blank">
                     Get in Touch
                   </Button>
                 </>
