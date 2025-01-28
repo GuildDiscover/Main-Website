@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Layout, Typography, Row, Col, Input } from "antd";
-import serverData from "../data/serverData.json"; // Assuming you have server data in JSON
+import React, { useState, useEffect, useContext } from "react";
+import { Layout, Typography, Row, Col, Input, Spin } from "antd";
 import ServerCard from "../components/serverCard";
+import { ServerContext } from "../context/ServerContext";
 
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -9,31 +9,27 @@ const { Search } = Input;
 
 const Servers = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [servers, setServers] = useState([]);
+  // const [servers, setServers] = useState([]);
   // const [categories, setCategories] = useState([]);
 
-  useEffect(() => {
-    setServers(serverData);
-    return () => {
-      setServers([]);
-    };
-  }, []);
+  const { servers, filterServers } = useContext(ServerContext);
 
   useEffect(() => {
     if (searchTerm.length > 2) {
-      const filteredServers = serverData.filter((server) => {
-        if (server.name.toLowerCase().includes(searchTerm.toLowerCase())) return true;
-        for (let category of server.categories) {
-          if (category.toLowerCase().includes(searchTerm.toLowerCase())) return true;
-        }
-        return false;
-      });
-
-      setServers(filteredServers);
+      filterServers(searchTerm);
     } else {
-      setServers(serverData);
+      filterServers(null);
     }
-  }, [searchTerm]);
+  }, [searchTerm, filterServers]);
+
+  // Show the loading spinner if servers data is null
+  if (servers === null) {
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <Spin size="large" tip="Loading servers..." />
+      </div>
+    );
+  }
 
   return (
     <Content>
