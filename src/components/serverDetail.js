@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Card, Col, Row, Typography, Button, Rate, Avatar, Divider } from "antd";
 import Meta from "antd/es/card/Meta";
+import { ServerContext } from "../context/ServerContext";
 
 const { Title, Text } = Typography;
 
-function ServerDetails({ servers }) {
+function ServerDetails() {
   const { id } = useParams(); // Get the server ID from the URL
-  const server = servers.find((server) => server.id === parseInt(id)); // Find the server by ID
+  const { getServer } = useContext(ServerContext);
+
+  const [server, setServer] = useState(null);
+
+  useEffect(() => {
+    setServer(getServer(parseInt(id)));
+    return () => {};
+  }, [getServer, id]);
 
   if (!server) {
     return <div>Server not found</div>;
