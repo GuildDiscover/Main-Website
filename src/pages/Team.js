@@ -26,6 +26,7 @@ const teamMembers = [
     description:
       "Ash1729 is a key web developer at Guildiscover and the primary architect behind the platform itself. Ash1729 stands out as one of the team’s top developers and is the most active member.",
     image: "https://i.ibb.co/fnJRhN5/Ash-Logo.png",
+    website: "https://ash-portfolio.netlify.app/",
   },
   {
     name: "Lopexs",
@@ -116,6 +117,15 @@ const Team = () => {
               </Title>
               <Paragraph style={{ color: "#d1d5db" }}>{member.role}</Paragraph>
               <Paragraph style={{ color: "#8b9cc4" }}>{member.description}</Paragraph>
+              <br />
+              {member.website && (
+                <Paragraph style={{ color: "white" }}>
+                  Website:{" "}
+                  <a href={member.website} target={"_blank"} rel="noreferrer" className="link_text">
+                    {member.website}
+                  </a>
+                </Paragraph>
+              )}
             </motion.div>
           </Col>
         ))}
