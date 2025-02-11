@@ -30,13 +30,13 @@ const Navbar = () => {
 
   const menuItems = [
     { label: "Home", key: "/", link: "/" },
-    { label: "About", key: "/about", link: "/about" },
-    { label: "Contact", key: "contact", link: "https://discord.gg/z7DC9tTyEH", target: "_blank" },
+    { label: "Servers", key: "/server-list", link: "/server-list" },
     { label: "Team", key: "/team", link: "/team" },
+    { label: "Contact", key: "contact", link: "https://discord.gg/z7DC9tTyEH", target: "_blank" },
+    { label: "About", key: "/about", link: "/about" },
+    { label: "Guidelines", key: "/guidelines", link: "/guidelines" },
     { label: "Terms", key: "/terms-and-conditions", link: "/terms-and-conditions" },
     { label: "Privacy", key: "/privacy-policy", link: "/privacy-policy" },
-    { label: "Guidelines", key: "/guidelines", link: "/guidelines" },
-    { label: "Servers", key: "/server-list", link: "/server-list" },
   ];
 
   return (

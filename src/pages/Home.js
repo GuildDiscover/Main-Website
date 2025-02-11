@@ -257,6 +257,7 @@ const Home = () => {
           {" "}
           <Col xs={24} sm={24} md={8}>
             {" "}
+            ``
             <Card
               hoverable
               cover={<AppstoreOutlined style={{ fontSize: "60px", color: "#4CAF50", padding: "30px" }} />}

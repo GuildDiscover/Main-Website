@@ -1,7 +1,8 @@
 import React from "react";
-import { Layout, Typography, Row, Col, Card, Avatar } from "antd";
+import { Typography, Row, Col, Avatar } from "antd";
+import { motion } from "framer-motion";
+import "./Team.css";
 
-const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 
 const teamMembers = [
@@ -42,55 +43,84 @@ const teamMembers = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const headerVariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+  hover: {
+    scale: 1.05,
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut",
+    },
+  },
+};
+
 const Team = () => {
   return (
-    <Content>
-      <div
-        style={{
-          textAlign: "center",
-          padding: "40px",
-          background: "linear-gradient(135deg, #6a11cb, #2575fc)",
-          // background: "black",
-          borderRadius: "15px",
-          marginBottom: "50px",
-        }}
-      >
-        <Title level={1} style={{ textAlign: "center", color: "#fff" }}>
+    <motion.div className="team-container" variants={containerVariants} initial="hidden" animate="visible">
+      {/* Header Section */}
+      <motion.div className="team-header" variants={headerVariants}>
+        <Title level={2} style={{ color: "#fff", marginBottom: "1rem" }}>
           Meet the Team
         </Title>
-        <Paragraph style={{ textAlign: "center", fontSize: "18px", color: "#fff" }}>
+        <Paragraph style={{ color: "#d1d5db", fontSize: "1.2rem" }}>
           Guildiscover is made by a passionate and motivated team, with the project is made with the
           assistance by all of the team members.
-          <br></br>
+          <br />
           This project wouldn't be at its current version without the work by all of the team members.
-          <br></br>
+          <br />
           We would like to give credits to all of the members that had contributed to the project.
         </Paragraph>
-      </div>
+      </motion.div>
 
-      <Row gutter={[16, 16]} style={{ marginTop: "40px" }}>
+      {/* Team Members Section */}
+      <Row gutter={[24, 24]} justify="center">
         {teamMembers.map((member, index) => (
-          <Col xs={24} sm={12} md={6} key={index}>
-            <Card
-              bordered={false}
-              style={{
-                backgroundColor: "#2d2e36",
-                color: "#fff",
-                textAlign: "center",
-                borderRadius: "15px",
-              }}
-            >
-              <Avatar size={100} src={member.image} />
-              <Title level={3} style={{ color: "#fff", marginTop: "10px" }}>
+          <Col xs={24} sm={12} md={8} key={index}>
+            <motion.div className="team-card" variants={cardVariants} whileHover="hover">
+              <Avatar size={80} src={member.image} alt={member.name} />
+              <Title level={4} style={{ color: "#60a5fa", marginTop: "1rem" }}>
                 {member.name}
               </Title>
-              <h3>{member.role}</h3>
-              <p>{member.description}</p>
-            </Card>
+              <Paragraph style={{ color: "#d1d5db" }}>{member.role}</Paragraph>
+              <Paragraph style={{ color: "#8b9cc4" }}>{member.description}</Paragraph>
+            </motion.div>
           </Col>
         ))}
       </Row>
-    </Content>
+    </motion.div>
   );
 };
 
