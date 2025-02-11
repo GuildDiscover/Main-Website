@@ -1,0 +1,173 @@
+.guidelines-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f1a2e, #1a1b26);
+  color: #e4e4e4;
+  font-family: "Inter", sans-serif;
+}
+
+.guidelines-header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(41, 63, 114, 0.7), rgba(24, 36, 65, 0.7));
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.guidelines-header h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 20px rgba(106, 17, 203, 0.5);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.header-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+  font-size: 1.1rem;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.guideline-card {
+  background: rgba(45, 46, 54, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.guideline-card h2 {
+  color: #60a5fa;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.guidelines-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.guidelines-list li {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item-heading {
+  display: block;
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-content {
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.important-note {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(96, 165, 250, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+  }
+}
+
+.guideline-card:hover {
+  animation: pulse 2s infinite;
+  background: rgba(45, 46, 54, 0.9);
+}
+
+@media (max-width: 768px) {
+  .guidelines-container {
+    padding: 1rem;
+  }
+
+  .guidelines-header {
+    padding: 2rem 1rem;
+  }
+
+  .guidelines-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guideline-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Add smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(45, 46, 54, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #60a5fa;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
