@@ -7,6 +7,10 @@ const { Paragraph } = Typography;
 
 const ServerCard = ({ server }) => {
   const tagColors = ["#FF79C6", "#50FA7B", "#FFB86C", "#8BE9FD", "#BD93F9", "#FF5555"];
+  const getRandomColor = () => {
+    const colors = ["#FF5733", "#33A8FF", "#FF33A8", "#33FF57", "#FFC300", "#8E44AD"];
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
 
   return (
     <Card
@@ -37,17 +41,35 @@ const ServerCard = ({ server }) => {
           overflow: "hidden",
           border: "4px solid #6272A4",
           boxShadow: "0 4px 12px rgba(98, 114, 164, 0.5)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: server.logo ? "transparent" : getRandomColor(),
+          opacity: server.logo ? 1 : 0.6,
         }}
       >
-        <img
-          alt={server.name}
-          src={server.logo}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        />
+        {server.logo ? (
+          <img
+            alt={server.name}
+            src={server.logo}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        ) : (
+          <span
+            style={{
+              fontSize: "3rem",
+              fontWeight: "bold",
+              color: "#fff",
+              textTransform: "uppercase",
+            }}
+          >
+            {server.name ? server.name.charAt(0) : "?"}
+          </span>
+        )}
       </div>
 
       <div style={{ marginTop: "18px", fontSize: "1.3em", fontWeight: "600", color: "#BD93F9" }}>
