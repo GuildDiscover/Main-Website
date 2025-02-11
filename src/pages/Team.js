@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Wakjawa",
-    role: "Designer & Little Knowledge in Law",
+    role: "Designer",
     description:
       "Wakjawa is a talented designer at Guildiscover who also brings legal expertise as a law student. Alongside design work, Wakjawa assists with all law-related matters, supporting both creative and compliance areas.",
     image: "https://i.ibb.co/fQVS7MW/Wakjawa-Logo.png",
