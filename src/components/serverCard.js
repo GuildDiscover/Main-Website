@@ -23,6 +23,7 @@ const ServerCard = ({ server }) => {
         textAlign: "center",
         color: "#F8F8F2",
         border: "0",
+        height: "100%",
         transition: "transform 0.1s ease-in-out",
       }}
       onMouseEnter={(e) => {

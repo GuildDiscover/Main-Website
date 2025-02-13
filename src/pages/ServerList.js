@@ -76,7 +76,7 @@ const Servers = () => {
         {servers.length > 0 ? (
           servers.map((server) => (
             <Col xs={24} sm={12} md={8} lg={6} key={server.id}>
-              <motion.div variants={itemVariants}>
+              <motion.div variants={itemVariants} style={{ height: "100%" }}>
                 <ServerCard server={server} />
               </motion.div>
             </Col>
