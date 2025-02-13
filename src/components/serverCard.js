@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Tag, Typography } from "antd";
+import { Card, Tag, Typography } from "antd";
 import { Link } from "react-router-dom";
 import { UsergroupAddOutlined } from "@ant-design/icons";
 
@@ -19,10 +19,12 @@ const ServerCard = ({ server }) => {
         borderRadius: "12px",
         overflow: "hidden",
         boxShadow: "0 8px 24px rgba(0, 0, 0, 0.3)",
-        backgroundColor: "#282A36",
+        // backgroundColor: "#282A36",
+        backgroundColor: "black",
         textAlign: "center",
         color: "#F8F8F2",
         border: "0",
+        height: "100%",
         transition: "transform 0.1s ease-in-out",
       }}
       onMouseEnter={(e) => {
@@ -39,7 +41,8 @@ const ServerCard = ({ server }) => {
           margin: "0 auto",
           borderRadius: "50%",
           overflow: "hidden",
-          border: "4px solid #6272A4",
+          // border: server.logo ? "4px solid white" : "4px solid #6272A4",
+          border: "4px solid white",
           boxShadow: "0 4px 12px rgba(98, 114, 164, 0.5)",
           display: "flex",
           alignItems: "center",
@@ -72,7 +75,15 @@ const ServerCard = ({ server }) => {
         )}
       </div>
 
-      <div style={{ marginTop: "18px", fontSize: "1.3em", fontWeight: "600", color: "#BD93F9" }}>
+      <div
+        style={{
+          marginTop: "18px",
+          fontSize: "1.3em",
+          fontWeight: "600",
+          // color: "#BD93F9",
+          color: "#FC427B",
+        }}
+      >
         {server.name}
       </div>
 
@@ -80,7 +91,13 @@ const ServerCard = ({ server }) => {
         {server.description}
       </Paragraph>
 
-      <div style={{ marginTop: "12px", marginBottom: "15px" }}>
+      <div
+        style={{
+          marginTop: "12px",
+          marginBottom: "15px",
+          minHeight: "100px",
+        }}
+      >
         {server.categories.map((category, index) => (
           <Tag
             color={tagColors[index % tagColors.length]}
@@ -113,34 +130,19 @@ const ServerCard = ({ server }) => {
           fontWeight: "500",
         }}
       >
-        <UsergroupAddOutlined style={{ marginRight: "6px", color: "#8BE9FD" }} />
+        <UsergroupAddOutlined
+          style={{
+            marginRight: "6px",
+            color: "#25CCF7",
+          }}
+        />
         {server.member_count} Members
       </div>
 
       <Link to={`/server/${server.id}`}>
-        <Button
-          style={{
-            backgroundColor: "#6272A4",
-            color: "#F8F8F2",
-            border: "none",
-            padding: "10px 20px",
-            fontWeight: "bold",
-            borderRadius: "8px",
-            boxShadow: "0px 4px 8px rgba(98, 114, 164, 0.3)",
-            transition: "all 0.3s ease",
-            marginTop: "25px",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "#7B88B5";
-            e.currentTarget.style.transform = "translateY(-2px)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "#6272A4";
-            e.currentTarget.style.transform = "translateY(0)";
-          }}
-        >
+        <button class="orange_button" style={{ marginTop: "25px" }}>
           View Details
-        </Button>
+        </button>
       </Link>
     </Card>
   );
