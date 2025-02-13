@@ -37,6 +37,7 @@ const Navbar = () => {
     { label: "Guidelines", key: "/guidelines", link: "/guidelines" },
     { label: "Terms", key: "/terms-and-conditions", link: "/terms-and-conditions" },
     { label: "Privacy", key: "/privacy-policy", link: "/privacy-policy" },
+    { label: "Submit", key: "submit", link: "https://forms.gle/7HRxjxSd3Tnuz9zE8", target: "_blank"}
   ];
 
   return (
