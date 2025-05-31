@@ -299,12 +299,12 @@ const Guidelines = () => {
           <p>
             <strong>Website:</strong>{" "}
             <a
-              href="https://guildiscover.jst-tan.page"
+              href="https://guildiscover.jst-tan.com"
               target={"_blank"}
               className="link_text"
               rel="noreferrer"
             >
-              https://guildiscover.jst-tan.page
+              https://guildiscover.jst-tan.com
             </a>
           </p>
           <p>
