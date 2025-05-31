@@ -180,12 +180,12 @@ const Terms = () => {
           website, services, and content provided by Guildiscover (“we,” “us,” or “our”). By accessing or
           using{" "}
           <a
-            href="https://guildiscover.jst-tan.page"
+            href="https://guildiscover.jst-tan.com"
             target={"_blank"}
             className="link_text"
             rel="noreferrer"
           >
-            https://guildiscover.jst-tan.page
+            https://guildiscover.jst-tan.com
           </a>{" "}
           (the “Website”), you agree to comply with these Terms.
           <br />
