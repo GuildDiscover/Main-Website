@@ -81,7 +81,7 @@ const Terms = () => {
     {
       title: "Privacy Policy",
       content: [
-        "Your use of Guildiscover is governed by our Privacy Policy, available at https://guildiscover.jst-tan.page/privacy. By using the Website, you agree to the collection and use of your information as described in the Privacy Policy.",
+        "Your use of Guildiscover is governed by our Privacy Policy, available at https://guildiscover.jst-tan.com/privacy. By using the Website, you agree to the collection and use of your information as described in the Privacy Policy.",
       ],
     },
     {
