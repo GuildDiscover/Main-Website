@@ -181,8 +181,8 @@ const Privacy = () => {
         "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
       additional_info: {
         team: "Guildiscover Team",
-        email: "guildiscover@jst-tan.page",
-        website: "https://guildiscover.jst-tan.page",
+        email: "guildiscover@jst-tan.com",
+        website: "https://guildiscover.jst-tan.com",
       },
       disclaimer:
         "By using Guildiscover, you agree to the terms of this Privacy Policy. If you do not agree, please refrain from using our website.",
