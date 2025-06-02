@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call it initially
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -43,12 +43,16 @@ const Navbar = () => {
   return (
     <Header
       style={{
-        background: "black",
+        background: "linear-gradient(135deg, #0f1a2e, #1a1b26)",
         color: "white",
         padding: 0,
         boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
         width: "100%",
         overflow: "hidden",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        height: "64px",
       }}
     >
       <div
@@ -68,8 +72,16 @@ const Navbar = () => {
             height: "100%",
           }}
         >
-          <div className={"logo"} style={{ fontSize: "1.5rem", fontWeight: "bold", whiteSpace: "nowrap" }}>
-            <Link to={"/"} style={{ color: "white" }}>
+          <div 
+            className="logo" 
+            style={{ 
+              fontSize: isMobile ? "1.2rem" : "1.5rem", 
+              fontWeight: "bold", 
+              whiteSpace: "nowrap",
+              transition: "font-size 0.3s ease",
+            }}
+          >
+            <Link to={"/"} style={{ color: "white", textDecoration: "none" }}>
               Guildiscover
             </Link>
           </div>
@@ -82,6 +94,7 @@ const Navbar = () => {
                 border: "none",
                 flex: 1,
                 justifyContent: "flex-end",
+                lineHeight: "64px",
               }}
             >
               {menuItems.map((item) => (
@@ -93,6 +106,9 @@ const Navbar = () => {
                       color: "white",
                       position: "relative",
                       padding: "0 5px",
+                      fontSize: "0.9rem",
+                      transition: "all 0.3s ease",
+                      textDecoration: "none",
                     }}
                   >
                     {item.label}
@@ -103,8 +119,9 @@ const Navbar = () => {
                           bottom: "-5px",
                           left: 0,
                           width: "100%",
-                          height: "5px",
-                          background: "#333",
+                          height: "3px",
+                          background: "#fa6400",
+                          transition: "all 0.3s ease",
                         }}
                       />
                     )}
@@ -115,37 +132,66 @@ const Navbar = () => {
           )}
           {isMobile && (
             <MenuOutlined
-              className={"menu-icon"}
+              className="menu-icon"
               onClick={showDrawer}
               style={{
                 fontSize: "1.5rem",
                 cursor: "pointer",
                 color: "white",
+                padding: "8px",
+                transition: "transform 0.3s ease",
               }}
             />
           )}
         </div>
       </div>
       <Drawer
-        title="Menu"
+        title={
+          <div style={{ color: "white", fontSize: "1.2rem", fontWeight: "bold" }}>
+            Menu
+          </div>
+        }
         placement="right"
         onClose={onClose}
         open={visible}
-        bodyStyle={{ padding: 0 }}
-        width={250}
+        bodyStyle={{ 
+          padding: 0,
+          background: "linear-gradient(135deg, #0f1a2e, #1a1b26)",
+        }}
+        headerStyle={{
+          background: "linear-gradient(135deg, #0f1a2e, #1a1b26)",
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
+        }}
+        width={280}
       >
         <Menu
           items={menuItems.map((item) => ({
             key: item.key,
             label: (
-              <Link to={item.link} target={item.target} onClick={onClose}>
+              <Link 
+                to={item.link} 
+                target={item.target} 
+                onClick={onClose}
+                style={{
+                  color: "white",
+                  display: "block",
+                  padding: "12px 0",
+                  fontSize: "1rem",
+                  transition: "all 0.3s ease",
+                  textDecoration: "none",
+                }}
+              >
                 {item.label}
               </Link>
             ),
           }))}
           selectedKeys={[location.pathname]}
           mode="vertical"
-          style={{ border: "none", margin: 0 }}
+          style={{ 
+            border: "none", 
+            margin: 0,
+            background: "transparent",
+          }}
         />
       </Drawer>
     </Header>
