@@ -47,6 +47,7 @@ const HomeCallToAction = () => {
         <Button
           type="primary"
           size="large"
+          href="/server-list"
           icon={<CheckCircleOutlined />}
           style={{
             fontSize: "1.2rem",
