@@ -17,7 +17,11 @@ const cardStyle = {
   flexDirection: "column",
 };
 
-const textStyle = { color: "#d1d1d1", fontSize: "16px" };
+const textStyle = { 
+  color: "#d1d1d1", 
+  fontSize: "clamp(14px, 2vw, 16px)",
+  lineHeight: 1.6,
+};
 
 const AnimatedCard = motion(Card);
 
@@ -38,23 +42,31 @@ const BasicInfocontainerStyle = {
   display: "flex",
   alignItems: "center",
   border: "1px solid #333",
+  flexWrap: "wrap",
+  gap: "8px",
 };
 
 const BasicInfolabelStyle = {
   minWidth: "120px",
   color: "#e0e0e0",
-  fontSize: "14px",
+  fontSize: "clamp(12px, 1.5vw, 14px)",
 };
 
 const BasicInfoValueStyle = {
   color: "#4dabf5",
-  fontSize: "14px",
+  fontSize: "clamp(12px, 1.5vw, 14px)",
   marginLeft: "8px",
+  wordBreak: "break-word",
 };
 
 const ReviewSection = ({ title, content }) => (
   <>
-    <Title level={3} style={{ color: "#d1d1d1", fontWeight: "bold", paddingTop: "10px" }}>
+    <Title level={3} style={{ 
+      color: "#d1d1d1", 
+      fontWeight: "bold", 
+      paddingTop: "10px",
+      fontSize: "clamp(16px, 2vw, 20px)",
+    }}>
       {title}
     </Title>
     <Text style={textStyle}>{content}</Text>
@@ -64,8 +76,8 @@ const ReviewSection = ({ title, content }) => (
 );
 
 const ServerInfo = ({ server }) => (
-  <Row gutter={16}>
-    <Col span={12}>
+  <Row gutter={[24, 24]}>
+    <Col xs={24} md={12}>
       <AnimatedCard
         bordered={false}
         style={cardStyle}
@@ -73,7 +85,11 @@ const ServerInfo = ({ server }) => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Title level={3} style={{ color: "#fff" }}>
+        <Title level={3} style={{ 
+          color: "#fff",
+          fontSize: "clamp(20px, 2.5vw, 24px)",
+          marginBottom: "20px",
+        }}>
           Server Review
         </Title>
         <BasicInfo label="Reviewed At" value={server.moderator_date} />
@@ -98,7 +114,7 @@ const ServerInfo = ({ server }) => (
       </AnimatedCard>
     </Col>
 
-    <Col span={12}>
+    <Col xs={24} md={12}>
       <AnimatedCard
         bordered={false}
         style={cardStyle}
@@ -106,13 +122,17 @@ const ServerInfo = ({ server }) => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <Title level={3} style={{ color: "#fff" }}>
+        <Title level={3} style={{ 
+          color: "#fff",
+          fontSize: "clamp(20px, 2.5vw, 24px)",
+          marginBottom: "20px",
+        }}>
           Server Information
         </Title>
         <Text style={textStyle}>{server.description}</Text>
         <br />
         <br />
-        <div style={{ textAlign: "left", fontSize: "16px" }}>
+        <div style={{ textAlign: "left" }}>
           {[
             { label: "Member Count", value: server.member_count },
             { label: "Owner ID", value: server.owner_id },
@@ -126,12 +146,18 @@ const ServerInfo = ({ server }) => (
             <BasicInfo key={index} label={item.label} value={item.value} />
           ))}
         </div>
-        <Divider style={{ borderColor: "yellow" }} />
-        <JoinButton href={server.invite_link}>Join Server</JoinButton>
-        &nbsp;&nbsp;&nbsp;
-        {server.owner_contact_link?.discord && (
-          <JoinButton href={server.owner_contact_link.discord}>Get in Touch</JoinButton>
-        )}
+        <Divider style={{ borderColor: "rgba(255, 255, 255, 0.1)" }} />
+        <div style={{ 
+          display: "flex", 
+          flexWrap: "wrap", 
+          gap: "10px",
+          justifyContent: "center",
+        }}>
+          <JoinButton href={server.invite_link}>Join Server</JoinButton>
+          {server.owner_contact_link?.discord && (
+            <JoinButton href={server.owner_contact_link.discord}>Get in Touch</JoinButton>
+          )}
+        </div>
       </AnimatedCard>
     </Col>
   </Row>
