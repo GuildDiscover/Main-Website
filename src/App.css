@@ -73,3 +73,78 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 30px 15px;
+  }
+
+  .orange_button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 20px 10px;
+  }
+
+  .text-center {
+    font-size: 1.2rem;
+  }
+}
+
+/* Container for responsive layouts */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.col {
+  padding: 10px;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    flex: 0 0 100%;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive typography */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
